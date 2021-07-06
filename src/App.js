@@ -1,14 +1,16 @@
 
 import './App.css';
-import MyNav from './MyNavbar';
-import Welcome from './Welcome';
-import Footer from './Footer';
+import MyNav from './Components/MyNavbar';
+import Welcome from './Components/Welcome';
+import Footer from './Components/Footer';
+import Books from './Components/Books';
 
 function App() {
   return (
     <div>
       <MyNav />
       <Welcome />
+      <Books />
       <Footer />
 
 
