@@ -3,14 +3,14 @@ import './App.css';
 import MyNav from './Components/MyNavbar';
 import Welcome from './Components/Welcome';
 import Footer from './Components/Footer';
-import Books from './Components/Books';
+import LatestReleases from './Components/LatestReleases';
 
 function App() {
   return (
     <div>
       <MyNav />
       <Welcome />
-      <Books />
+      <LatestReleases />
       <Footer />
 
 
