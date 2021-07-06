@@ -1,24 +1,15 @@
-import { Navbar, Nav } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
 
-const Jumbotron = () => {
+const Welcome = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">BookStore</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#features">Home</Nav.Link>
-          <Nav.Link href="#pricing">About</Nav.Link>
-          <Nav.Link href="#pricing">Browse</Nav.Link>
-        </Nav>
-        <Nav>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <Jumbotron>
+    
+        <h1>Welcome to the BookShop</h1>
+        <p>
+          Find all your favorite books here
+        </p>
+     
+    </Jumbotron>
   );
 };
-
-export default Jumbotron;
+export default Welcome;
