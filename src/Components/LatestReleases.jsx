@@ -1,17 +1,17 @@
 import books from "../Data/scifi.json";
-import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import { Card, Col, Row, Button } from "react-bootstrap";
 
 const LatestReleases = () => {
   return (
-    <Container>
-      <Row>
+    
+      <Row xs={12} md={6}>
         {
         
         books.map(book => (
-          <Col sm={6} md={4} lg={3} className="m-3">
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={book.img} width="800" height="400" />
-              <Card.Body className="CardBody">
+          <Col >
+            <Card style={{ width: "10rem" }} className = "ml-3">
+              <Card.Img variant="top" src={book.img} />
+              <Card.Body className="CardBody d-flex">
                 <Card.Title>{book.title}</Card.Title>
                 <Card.Text>{book.Category}</Card.Text>
               </Card.Body>
@@ -23,7 +23,7 @@ const LatestReleases = () => {
           </Col>
         ))}
       </Row>
-    </Container>
+    
   );
 };
 
