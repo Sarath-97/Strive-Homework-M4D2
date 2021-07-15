@@ -1,14 +1,11 @@
-import { Component } from "react";
-import { Card } from "react-bootstrap";
+import {useState}  from react
+import { Card, Container } from "react-bootstrap";
 import CommentArea from "./CommentArea";
 
-class SingleBook extends Component {
-  state = {
-    selected: false,
-  };
-  render() {
+const SingleBook = () =>{
+  const [selected, setSelected] = useState(false)
     return (
-        <>
+        <Container>
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={this.props.img} />
         <Card.Body>
@@ -17,7 +14,7 @@ class SingleBook extends Component {
           <Button
             variant="primary"
             onClick={() =>
-              this.setState({ selected: !this, state, seleted: True })
+              setSelected({ selected: !this, state, seleted: True })
             }
           >
             Comments
@@ -25,11 +22,11 @@ class SingleBook extends Component {
         </Card.Body>
       </Card>
       {
-          this.state.selected && <CommentArea />
+          selected && <CommentArea />
       }
-      </>
+      </Container>
     );
-  }
+    
 }
 
 export default SingleBook
